@@ -1,31 +1,37 @@
 import './App.css'
+import image1 from './1.jpeg';
+import image2 from './2.jpeg';
+import image3 from './3.jpeg';
+import image4 from './4.jpeg';
+import image5 from './5.jpeg';
+
 import { Component } from "react";
 
 
 const images = [
   {
-    src: "https://www.pixelstalk.net/wp-content/uploads/images6/HD-Wallpaper-Kyrie-Irving.jpg",
-    name: "Kyrie"
+    src: image1,
+    name: "Sun kissed"
   },
 
   {
-    src: "https://images.unsplash.com/photo-1673208839785-d0d3df5b39c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60",
-    name: "Mos design"
+    src: image2 ,
+    name: "B/W"
   },
 
   {
-    src: "https://images.unsplash.com/photo-1673205194019-55ac9f0a0899?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60",
-    name: "Third"
+    src: image3,
+    name: "Back view"
   },
 
   {
-    src: "https://images.unsplash.com/photo-1673232141234-889ed2cf341c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60",
-    name: "City"
+    src: image4,
+    name: "No fit concentrate"
   },
 
   {
-    src: "https://images.unsplash.com/photo-1673209377892-222ee5e19e7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60",
-    name: "iceburg"
+    src: image5,
+    name: "Late At night"
   }
 ]
 
@@ -52,6 +58,7 @@ export default class App extends Component {
 
   render() {
     return <div className='app'>
+      <h1>Mine</h1>
       <img src={images[this.state.count].src} alt={images[this.state.count].name} id='image' />
       <p>{this.state.count + 1}. {images[this.state.count].name}</p>
       <div className='buttonFld'>
